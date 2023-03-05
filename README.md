@@ -5,7 +5,7 @@ but she has trouble with understanding programming languages?
 Then you should definitely try this compiler plugin for Java. 
 
 > **Note**  
-> This compiler plugin is only compatible with *javac*. Other compilers, such as *ecj*, will not work. 
+> This compiler plugin is only compatible with *javac*. Other compilers, such as *jdt*, will not work. 
 > While this plugin should work correctly with any OpenJDK version since 11, it has only been tested with OpenJDK 17.
  
 ## Building
