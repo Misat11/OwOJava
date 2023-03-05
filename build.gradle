@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+compileJava {
+    options.fork = true
+    options.compilerArgs.addAll([
+            '--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED',
+            '--add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED',
+            '--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED'
+    ])
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(libs.junit.jupiter.api)
+    testRuntimeOnly(libs.junit.jupiter.engine)
+}
+
+test {
+    jvmArgs = [
+        '--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED',
+        '--add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED',
+        '--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED'
+    ]
+    useJUnitPlatform()
+}
+
+sourceCompatibility = 11
