@@ -4,7 +4,7 @@ Would you like to teach your imaginary catgirl waifu how to code,
 but she has trouble with understanding programming languages?
 Then you should definitely try this compiler plugin for Java. 
 
-> **Note**
+> **Note**  
 > This compiler plugin is only compatible with *javac*. Other compilers, such as *ecj*, will not work. 
 > While this plugin should work correctly with any OpenJDK version since 11, it has only been tested with OpenJDK 17.
  
